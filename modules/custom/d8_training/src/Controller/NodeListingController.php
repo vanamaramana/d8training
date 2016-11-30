@@ -46,27 +46,26 @@ class NodeListingController extends ControllerBase {
       '#theme' => 'table',
       '#rows' => $rows,
       '#header' => $header,
-      '#empty' => t('No records found')
+      '#empty' => t('No records foundd')
     );
-    $output[] = array(
+    /*$output[] = array(
       '#theme' => 'pager',
       '#quantity' => 1,
-    );
+    );*/
     return $output;
-
-
-
-
-/*    return [
-      '#theme' => 'item_list',
-      '#items' => array('one', 'two')
-    ];*/
   }
   
   public function content_entitytype() {
     return [
       '#theme' => 'markup',
       '#markup' => t('Hello '),
+    ];
+  }
+
+  public function list_node_tabs() {
+    return [
+      '#theme' => 'markup',
+      '#markup' => t('Tabs content '),
     ];
   }
 

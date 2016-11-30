@@ -1,0 +1,7 @@
+access d8training pages:
+  title: 'Access D8 Training pages'
+  description: 'Access all the pages created at d8 training'
+  restrict access: true
+
+permission_callbacks:
+  - \Drupal\d8_training\D8TrainingPermissions::d8TrainingNoodeLisingPermissions
