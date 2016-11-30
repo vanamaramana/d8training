@@ -1,0 +1,14 @@
+{
+  "name": "drupal/d8_custom",
+  "type": "drupal-module",
+  "description": "cUSTOM module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/d8_custom",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "http://drupal.org/project/issues/d8_custom",
+    "source": "http://cgit.drupalcode.org/d8_custom"
+  },
+  "require": { }
+}

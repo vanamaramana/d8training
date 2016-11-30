@@ -1,0 +1,17 @@
+
+# In order to to create pages it is necessary to define routes for them.
+# A route maps a URL path to a controller. It defines what function
+# or method will be called when a URL is accessed.
+# If the user accesses http://drupal8.dev/d8-custom/hello, the routing
+# system will look for a route with that path. In this case it will find a
+# match, and execute the _controller callback. In this case the callback is
+# defined as a classname
+# ("\Drupal\d8_custom\Controller\D8CustomController")
+# and a method ("controller_method_name").
+d8_custom.d8_custom_controller_controller_method_name:
+  path: 'd8-custom/hello'
+  defaults:
+    _controller: '\Drupal\d8_custom\Controller\D8CustomController::controller_method_name'
+    _title: 'controller_method_title'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,6 @@
+d8_training.node_add:
+  title: 'Add Content of node'
+  description: 'test'
+  route_name: node.add_page
+  appears_on:
+    - 'd8_training.d8_training_node_list_method_name'

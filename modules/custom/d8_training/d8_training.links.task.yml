@@ -1,0 +1,10 @@
+d8_training.tabone:
+  title: Tab1
+  description: 'Manage your site''s book outlines. one'
+  route_name: d8_training.d8_training_node_list_method_name
+  base_route: d8_training.d8_training_node_list_method_name
+d8_training.tabtwo:
+  title: Tab2
+  description: 'Manage your site''s book outlines. tow'
+  route_name: d8_training.list_node_dynamic
+  base_route: d8_training.d8_training_node_list_method_name

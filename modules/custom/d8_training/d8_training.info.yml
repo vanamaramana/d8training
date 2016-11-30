@@ -1,0 +1,8 @@
+name: D8 Training
+type: module
+description: Drupal8 Training
+core: 8.x
+package: Custom
+version: 8.x-1.0
+dependencies:
+  - big_pipe

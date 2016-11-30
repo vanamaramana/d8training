@@ -1,0 +1,7 @@
+name: d8_custom
+type: module
+description: cUSTOM module
+core: 8.x
+package: Custom
+dependencies:
+  - user

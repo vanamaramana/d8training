@@ -1,0 +1,26 @@
+
+# In order to to create pages it is necessary to define routes for them.
+# A route maps a URL path to a controller. It defines what function
+# or method will be called when a URL is accessed.
+# If the user accesses http://drupal8.dev/d8-custom/hello, the routing
+# system will look for a route with that path. In this case it will find a
+# match, and execute the _controller callback. In this case the callback is
+# defined as a classname
+# ("\Drupal\d8_custom\Controller\D8CustomController")
+# and a method ("controller_method_name").
+d8_training.d8_training_node_list_method_name:
+  path: '/list/node'
+  defaults:
+    # What's being returned is the entire response (not HTML, or even if HTML, we don't want additional blocks around it), so use _controller instead of _content.
+    _controller: '\Drupal\d8_training\Controller\NodeListingController::content'
+  requirements:
+    _permission: 'access content'
+
+d8_training.list_node_dynamic:
+  path: '/list-node'
+  defaults:
+    # What's being returned is the entire response (not HTML, or even if HTML, we don't want additional blocks around it), so use _controller instead of _content.
+    _controller: '\Drupal\d8_training\Controller\NodeListingController::content_entitytype'
+    _title: 'Dynamic Argument'
+  requirements:
+    _permission: 'access content'

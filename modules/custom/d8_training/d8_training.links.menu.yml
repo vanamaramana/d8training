@@ -1,0 +1,10 @@
+d8_training.list:
+  title: Menu name at main menu
+  description: 'Manage your site''s book outlines.'
+  route_name: d8_training.d8_training_node_list_method_name
+d8_training.admin_menu:
+  title: Menu name at structure
+  description: 'Manage your site''s book outlines.'
+  route_name: d8_training.d8_training_node_list_method_name
+  parent: system.admin_config_development
+  weight: -1000
