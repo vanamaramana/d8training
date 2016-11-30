@@ -43,3 +43,12 @@ d8_training.list_node_tabs_form:
     _title: 'Sample Form'
   requirements:
     _permission: 'access content'
+
+d8_training.admin_config:
+  path: '/admin/d8-training-config'
+  defaults:
+    # What's being returned is the entire response (not HTML, or even if HTML, we don't want additional blocks around it), so use _controller instead of _content.
+    _form: 'Drupal\d8_training\Form\ConfigForm'
+    _title: 'Weather Config Form'
+  requirements:
+    _permission: 'access content'
