@@ -1,0 +1,8 @@
+weather_widget:
+  css:
+    theme:
+      assets/css/d8_training.css: {}
+  js:
+    assets/js/d8_training.js: {}
+  dependencies:
+    - core/jquery

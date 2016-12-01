@@ -6,3 +6,13 @@ services:
   d8_training.form_manager:
     class: Drupal\d8_training\FormManager
     arguments: ['@database']
+  d8_training.console_demo:
+    class: Drupal\d8_training\ControlDemoService
+    arguments: ["@database", "@logger.factory", "@config.factory"]
+  d8_training.weather_report:
+    class: Drupal\d8_training\OpenWeatherForecaster
+    arguments: ["@config.factory", "@http_client"]
+  d8_training.event_manager:
+    class: Drupal\d8_training\EventSubscriber\EventManager
+    tags:
+      - { name: event_subscriber }
